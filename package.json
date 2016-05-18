@@ -1,0 +1,27 @@
+{
+  "name": "SD_ARTS",
+  "version": "1.0.0",
+  "description": "San Diego Aesthetic and Regenerative Training Symposiums",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexxisroxxanne/pilut.git"
+  },
+  "author": [
+    "Alexxis Johnson <alexxis.r.p.johnson@gmail.com>"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "stripe": "^4.6.0"
+  },
+  "scripts": {
+    "lint-client": "./node_modules/.bin/eslint ./client/**/*",
+    "lint-server": "./node_modules/.bin/eslint ./server/**/*",
+    "test": "mocha --reporter spec test",
+    "validate": "npm ls",
+    "lint": "eslint .",
+    "start": "nodemon --watch server server/server.js",
+    "build": "webpack --progress --colors"
+  }
+}
